@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in day fibonacci</title>
+</head>
+<body>
+<script>
+    // let a = 0;
+    // let b = 1;
+    // let c = 0;
+    // let tong = 0;
+    // for (let i = 0; i < 20; i++) {
+    //     document.write(a + "</br>")
+    //     c = a + b;
+    //     tong += a
+    //     a = b;
+    //     b = c;
+    //     document.write(a + "</br>")
+    // }document.write("tong = " + tong)
+    let a = 0;
+    let b = 1;
+    let c = 0;
+    let i = 0;
+    while (i < 100000) {
+        a = b;
+        b = c;
+        c = a + b;
+        i++;
+        document.write(c + "</br>");
+    }
+</script>
+</body>
+</html>
